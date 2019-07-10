@@ -9,3 +9,13 @@ require_relative './exercise_6'
 puts "Exercise 7"
 puts "----------"
 
+puts "Create new store"
+puts "Enter name:"
+entry = gets
+
+puts "Enter revenue:"
+revenue = gets
+
+@store7 = Store.create(name: entry, annual_revenue: revenue)
+
+puts "Is the store valid? #{@store7.valid?}"
